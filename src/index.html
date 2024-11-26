@@ -17,7 +17,7 @@
 	</head>
 	<body class="bg-stone-100 text-stone-800">
 		<!-- Header Section -->
-		<header class="bg-[#2B3E3D] text-white">
+		<header class="bg-[#2B3E3D] text-white sticky top-0 z-50">
 			<div
 				class="container mx-auto flex items-center justify-between py-4 px-6"
 			>
@@ -53,47 +53,54 @@
 		<!-- Hero Section -->
 		<section class="bg-white relative overflow-hidden">
 			<div
-				class=" mx-auto flex flex-col items-center text-center relative w-full h-screen"
+				class="flex flex-col items-center text-center relative w-full h-screen"
 			>
-					<!-- First Image -->
-					<img
-						src="https://picsum.photos/500/300"
-						alt="第一張圖片"
-						class="absolute w-full h-full object-cover shadow-md parallax"
-						style="z-index: 1; transform: translateY(0px)"
-						data-speed="0.8"
-					/>
-					<!-- Second Image -->
-					<img
-						src="https://picsum.photos/500/301"
-						alt="第二張圖片"
-						class="absolute w-full h-full object-cover shadow-md parallax"
-						style="z-index: 2; transform: translateY(0px)"
-						data-speed="0.3"
-					/>
-					<!-- Third Image -->
-					<img
-						src="https://picsum.photos/500/302"
-						alt="第三張圖片"
-						class="absolute w-full h-full object-cover shadow-md parallax"
-						style="z-index: 3; transform: translateY(0px)"
-						data-speed="-0.2"
-					/>
-					<!-- Text Content -->
-					<div
-						class="absolute inset-0 flex flex-col items-center justify-center z-20 text-white"
+				<!-- First Image -->
+				<img
+					src="img/main_duck.png"
+					alt="第一張圖片"
+					class="absolute w-full h-full object-cover parallax"
+					style="z-index: 4; transform: translateY(0px)"
+					data-speed="0.1"
+				/>
+				<!-- Second Image -->
+				<img
+					src="img/buy_duck.png"
+					alt="第二張圖片"
+					class="absolute w-full h-full object-cover parallax"
+					style="z-index: 3; transform: translateY(0px)"
+					data-speed="0.2"
+				/>
+				<!-- Third Image -->
+				<img
+					src="img/sale_duck.png"
+					alt="第三張圖片"
+					class="absolute w-full h-full object-cover parallax"
+					style="z-index: 2; transform: translateY(0px)"
+					data-speed="0.3"
+				/>
+				<img
+					src="img/duck_bg.png"
+					alt="第三張圖片"
+					class="absolute w-full h-full object-cover parallax"
+					style="z-index: 1; transform: translateY(0px)"
+					data-speed="0.4"
+				/>
+				<!-- Text Content -->
+				<div
+					class="absolute inset-0 flex flex-col items-center justify-center z-20 text-white bg-black bg-opacity-30"
+				>
+					<h2 class="text-4xl font-bold mb-4">歡迎使用 Enjoy Buy</h2>
+					<p class="text-lg mb-8">一個讓生活更簡單、提升效率的好幫手。</p>
+					<a
+						href="#download"
+						class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
-						<h2 class="text-4xl font-bold mb-4">歡迎使用 Enjoy Buy</h2>
-						<p class="text-lg mb-8">一個讓生活更簡單、提升效率的好幫手。</p>
-						<a
-							href="#download"
-							class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						<span
+							class="relative z-0 text-white transition ease-in-out duration-500"
+							>立即體驗</span
 						>
-							<span
-								class="relative z-0 text-white transition ease-in-out duration-500"
-								>立即體驗</span
-							>
-						</a>
+					</a>
 				</div>
 			</div>
 			<!-- Background Layer for Parallax -->
@@ -106,48 +113,66 @@
 		<section id="features" class="bg-stone-100 py-16">
 			<div class="container mx-auto text-center">
 				<h3 class="text-3xl font-bold mb-8">功能特色</h3>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="grid grid-rows-1 md:grid-rows-3 gap-8">
 					<!-- Feature 1 -->
-					<div class="bg-white rounded-lg shadow-lg p-6">
-						<div class="w-full h-40">
+					<div
+						class="bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:space-x-12"
+					>
+						<div class="w-full">
 							<img
 								src="https://picsum.photos/500"
 								alt="功能 1"
 								class="w-full h-full object-cover rounded-md"
 							/>
 						</div>
-						<h4 class="text-xl font-semibold mt-4 mb-2">簡單易用</h4>
-						<p class="text-stone-600">
-							我們的應用程式設計簡潔直觀，讓每個人都能輕鬆上手。
-						</p>
+						<div
+							class="flex sm:items-start items-center justify-center flex-col"
+						>
+							<h4 class="text-xl font-semibold mt-4 mb-2">簡單易用</h4>
+							<p class="text-stone-600 sm:text-left">
+								我們的應用程式設計簡潔直觀，讓每個人都能輕鬆上手。
+							</p>
+						</div>
 					</div>
 					<!-- Feature 2 -->
-					<div class="bg-white rounded-lg shadow-lg p-6">
-						<div class="w-full h-40">
+					<div
+						class="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row-reverse space-x-0"
+					>
+						<div class="w-full md:w-1/2">
 							<img
 								src="https://picsum.photos/500"
 								alt="功能 2"
 								class="w-full h-full object-cover rounded-md"
 							/>
 						</div>
-						<h4 class="text-xl font-semibold mt-4 mb-2">高度自訂</h4>
-						<p class="text-stone-600">
-							根據您的需求和喜好，隨心所欲地調整使用方式。
-						</p>
+						<div
+							class="flex w-full md:w-1/2 sm:items-start items-center justify-center flex-col"
+						>
+							<h4 class="text-xl font-semibold mt-4 mb-2">高度自訂</h4>
+							<p class="text-stone-600 sm:text-left">
+								根據您的需求和喜好，隨心所欲地調整使用方式。
+							</p>
+						</div>
 					</div>
 					<!-- Feature 3 -->
-					<div class="bg-white rounded-lg shadow-lg p-6">
-						<div class="w-full h-40">
+					<div
+						class="bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:space-x-12"
+					>
+						<div class="w-full">
 							<img
 								src="https://picsum.photos/500"
 								alt="功能 3"
 								class="w-full h-full object-cover rounded-md"
 							/>
 						</div>
-						<h4 class="text-xl font-semibold mt-4 mb-2">安全可靠</h4>
-						<p class="text-stone-600">
-							採用領先業界的安全防護措施，全面保障您的數據安全。
-						</p>
+						<div
+							class="flex sm:items-start items-center justify-center flex-col"
+						>
+							<h4 class="text-xl font-semibold mt-4 mb-2">安全可靠</h4>
+							<p class="text-stone-600 sm:text-left">
+								採用領先業界的安全防護措施，全面保障您的數據安全。
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -215,7 +240,7 @@
 		<!-- Footer Section -->
 		<footer class="bg-stone-800 text-white py-6">
 			<div class="container mx-auto text-center">
-				<p>&copy; 2024 Enjoy Buy. 版權所有。</p>
+				<p>&copy; 2024 Enjoy Buy. All rights reserved.</p>
 			</div>
 		</footer>
 
