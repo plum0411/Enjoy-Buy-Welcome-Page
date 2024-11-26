@@ -1,140 +1,236 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Guaba.guava</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./css/index.css" />
-    <!-- <style>
-      .parallax {
-        transform: translateZ(0);
-      }
-    </style> -->
-  </head>
-  <body class="bg-white">
-    <header id="headerPlaceholder" class="sticky top-0 z-50"></header>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				font-family: "Noto Sans TC", sans-serif;
+			}
+		</style>
+		<title>Enjoy Buy</title>
+	</head>
+	<body class="bg-stone-100 text-stone-800">
+		<!-- Header Section -->
+		<header class="bg-[#2B3E3D] text-white">
+			<div
+				class="container mx-auto flex items-center justify-between py-4 px-6"
+			>
+				<h1 class="text-2xl font-bold">Enjoy Buy</h1>
+				<nav>
+					<ul class="flex space-x-4">
+						<li>
+							<a
+								href="#features"
+								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
+								>功能特色</a
+							>
+						</li>
+						<li>
+							<a
+								href="#about"
+								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
+								>關於我們</a
+							>
+						</li>
+						<li>
+							<a
+								href="#download"
+								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
+								>下載</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-    <div class="mx-auto min-h-screen w-full">
-      <!-- 網頁內容START -->
-      <div class="relative flex px-8 pb-48 pt-28 sm:px-40 justify-center">
-        <!-- <div class="flex flex-row">
-          <img
-            src="img/Home/home_text.png"
-            alt="Fresh Naturally Products"
-            class="w-1/2 h-auto rounded-lg"
-          />
-          <img
-            src="img/Home/home_guava.png"
-            alt="Fresh Naturally Products"
-            class="mx-auto rounded-lg"
-          />
-        </div> -->
-        <img
-          src="img/Home/home_img.png"
-          alt="Fresh Naturally Products"
-          class="absolute z-10 rounded-lg"
-        />
-        <img
-          src="img/Home/home_bg.png"
-          alt="Fresh Naturally Products"
-          class="parallax left-0 right-0 top-0 mx-auto rounded-lg"
-          class="h-auto w-full"
-        />
-      </div>
-      <div
-        class="container mx-auto mb-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
-      >
-        <div class="md:w-2/1">
-          <img
-            src="img/Home/home-2.png"
-            alt="Fresh Naturally Products"
-            class="rounded-lg"
-          />
-        </div>
-        <div
-          class="container mt-6 text-center md:ml-6 md:mt-0 md:w-1/2 md:text-left"
-        >
-          <div class="flex flex-col items-center md:items-start">
-            <div class="ml-20 mr-4 h-full">
-              <div class="lineborder lineC h-full">
-                <h1
-                  class="mb-4 pl-10 text-7xl font-bold leading-tight text-gray-500"
-                >
-                  Fresh<br />Naturally
-                </h1>
-                <p class="mb-4 pl-10 text-3xl font-bold text-gray-500">
-                  新鮮水果×天然調味！
-                </p>
-              </div>
-              <div class="home1B">
-                <a href="./product.html">
-                  <button
-                    class="home1-button rounded-lg px-4 py-2 text-white hover:bg-lime-700"
-                  >
-                    查看商品
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr class="green-hr w-full" />
-      <div
-        class="container mx-auto mb-20 mt-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
-      >
-        <div class="md:w-2/3">
-          <div class="flex flex-col items-center md:items-start">
-            <div class="h-full">
-              <div>
-                <h1 class="text-2xl font-bold text-gray-500">
-                  產地直送×招牌甘草芭樂×鮮打芭樂汁×當季水果
-                </h1>
-                <div class="mt-20 flex items-center">
-                  <div class="w-1/3">
-                    <img src="img/logo_1.png" alt="LOGO" class="w rounded-lg" />
-                  </div>
-                  <div class="home-3 pl-10">
-                    <p class="home-3-h2 text-2xl font-bold">認識我們</p>
-                    <p class="home-3-p">
-                      記得媽媽曾經說過，做這些工作不僅是為了賺錢，更是為了讓客人能吃到最好的芭樂。每次切割芭樂時，她總是特別叮囑我，要仔細檢查每一顆，確保沒有瑕疵。篩選和分類的過程也同樣重要，我們要根據芭樂的大小、顏色和成熟度來分門別類，這樣客人才能根據自己的喜好進行選擇。
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="md:w-3/2 mt-6 text-center">
-          <img
-            src="img/Home/home-3.png"
-            alt="Fresh Naturally Products"
-            class="rounded-lg"
-          />
-        </div>
-      </div>
-      <!-- 網頁內容END -->
-    </div>
+		<!-- Hero Section -->
+		<section class="bg-white relative overflow-hidden">
+			<div
+				class=" mx-auto flex flex-col items-center text-center relative w-full h-screen"
+			>
+					<!-- First Image -->
+					<img
+						src="https://picsum.photos/500/300"
+						alt="第一張圖片"
+						class="absolute w-full h-full object-cover shadow-md parallax"
+						style="z-index: 1; transform: translateY(0px)"
+						data-speed="0.8"
+					/>
+					<!-- Second Image -->
+					<img
+						src="https://picsum.photos/500/301"
+						alt="第二張圖片"
+						class="absolute w-full h-full object-cover shadow-md parallax"
+						style="z-index: 2; transform: translateY(0px)"
+						data-speed="0.3"
+					/>
+					<!-- Third Image -->
+					<img
+						src="https://picsum.photos/500/302"
+						alt="第三張圖片"
+						class="absolute w-full h-full object-cover shadow-md parallax"
+						style="z-index: 3; transform: translateY(0px)"
+						data-speed="-0.2"
+					/>
+					<!-- Text Content -->
+					<div
+						class="absolute inset-0 flex flex-col items-center justify-center z-20 text-white"
+					>
+						<h2 class="text-4xl font-bold mb-4">歡迎使用 Enjoy Buy</h2>
+						<p class="text-lg mb-8">一個讓生活更簡單、提升效率的好幫手。</p>
+						<a
+							href="#download"
+							class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						>
+							<span
+								class="relative z-0 text-white transition ease-in-out duration-500"
+								>立即體驗</span
+							>
+						</a>
+				</div>
+			</div>
+			<!-- Background Layer for Parallax -->
+			<div
+				class="absolute inset-0 bg-gradient-to-b from-white to-stone-100 pointer-events-none"
+			></div>
+		</section>
 
-    <footer id="footerPlaceholder"></footer>
+		<!-- Features Section -->
+		<section id="features" class="bg-stone-100 py-16">
+			<div class="container mx-auto text-center">
+				<h3 class="text-3xl font-bold mb-8">功能特色</h3>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Feature 1 -->
+					<div class="bg-white rounded-lg shadow-lg p-6">
+						<div class="w-full h-40">
+							<img
+								src="https://picsum.photos/500"
+								alt="功能 1"
+								class="w-full h-full object-cover rounded-md"
+							/>
+						</div>
+						<h4 class="text-xl font-semibold mt-4 mb-2">簡單易用</h4>
+						<p class="text-stone-600">
+							我們的應用程式設計簡潔直觀，讓每個人都能輕鬆上手。
+						</p>
+					</div>
+					<!-- Feature 2 -->
+					<div class="bg-white rounded-lg shadow-lg p-6">
+						<div class="w-full h-40">
+							<img
+								src="https://picsum.photos/500"
+								alt="功能 2"
+								class="w-full h-full object-cover rounded-md"
+							/>
+						</div>
+						<h4 class="text-xl font-semibold mt-4 mb-2">高度自訂</h4>
+						<p class="text-stone-600">
+							根據您的需求和喜好，隨心所欲地調整使用方式。
+						</p>
+					</div>
+					<!-- Feature 3 -->
+					<div class="bg-white rounded-lg shadow-lg p-6">
+						<div class="w-full h-40">
+							<img
+								src="https://picsum.photos/500"
+								alt="功能 3"
+								class="w-full h-full object-cover rounded-md"
+							/>
+						</div>
+						<h4 class="text-xl font-semibold mt-4 mb-2">安全可靠</h4>
+						<p class="text-stone-600">
+							採用領先業界的安全防護措施，全面保障您的數據安全。
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <script>
-      // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
-      $(function () {
-        $("#headerPlaceholder").load("header.html");
-        $("#footerPlaceholder").load("footer.html");
-      });
+		<!-- About Section -->
+		<section id="about" class="bg-white py-16">
+			<div class="container mx-auto flex flex-col md:flex-row items-center">
+				<div class="w-full md:w-1/2 h-72 mb-8 md:mb-0">
+					<img
+						src="https://picsum.photos/500"
+						alt="關於我們"
+						class="w-full h-full object-cover rounded-lg shadow-md"
+					/>
+				</div>
+				<div class="md:w-1/2 text-center md:text-left px-6">
+					<h3 class="text-3xl font-bold mb-4">關於Enjoy Buy</h3>
+					<p class="text-lg text-stone-600 mb-8">
+						Enjoy
+						Buy是一款幫助您隨時隨地保持井然有序的應用程式。介面清晰，功能強大，是提升效率的最佳選擇。
+					</p>
+					<a
+						href="#download"
+						class="group px-6 py-3 rounded-lg inline-block overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+					>
+						<span
+							class="relative z-0 text-white transition ease-in-out duration-500"
+							>了解更多</span
+						>
+					</a>
+				</div>
+			</div>
+		</section>
 
-      // 視差效果
-      $(window).on("scroll", function () {
-        var scrollTop = $(this).scrollTop();
-        $(".parallax").css(
-          "transform",
-          "translateY(" + scrollTop * 0.5 + "px)",
-        );
-      });
-    </script>
-  </body>
+		<!-- Download Section -->
+		<section id="download" class="bg-[#2B3E3D] text-white py-16">
+			<div class="container mx-auto text-center">
+				<h3 class="text-3xl font-bold mb-4">立即下載Enjoy Buy</h3>
+				<p class="text-lg mb-8">支援多種平台，立即開始使用！</p>
+				<div class="flex justify-center space-x-4">
+					<a
+						href="#"
+						src="https://tailwindcss.com/docs/installation/play-cdn"
+						class="group [transform:translateZ(0)] px-6 py-3 rounded-lg overflow-hidden bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+					>
+						<span
+							class="relative z-0 text-[#2B3E3D] transition ease-in-out duration-500"
+							>下載 iOS/Android 版本</span
+						>
+					</a>
+					<a
+						href="#"
+						src="https://tailwindcss.com/docs/installation/play-cdn"
+						class="group [transform:translateZ(0)] px-6 py-3 rounded-lg overflow-hidden bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+					>
+						<span
+							class="relative z-0 text-[#2B3E3D] transition ease-in-out duration-500"
+							>立即開始使用網頁版</span
+						>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="bg-stone-800 text-white py-6">
+			<div class="container mx-auto text-center">
+				<p>&copy; 2024 Enjoy Buy. 版權所有。</p>
+			</div>
+		</footer>
+
+		<script>
+			// Parallax effect
+			document.addEventListener("scroll", () => {
+				const parallaxElements = document.querySelectorAll(".parallax");
+				const scrollTop =
+					window.pageYOffset || document.documentElement.scrollTop;
+
+				parallaxElements.forEach((el) => {
+					const speed = parseFloat(el.getAttribute("data-speed"));
+					el.style.transform = `translateY(${scrollTop * speed}px)`;
+				});
+			});
+		</script>
+	</body>
 </html>
