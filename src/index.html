@@ -21,8 +21,32 @@
 			<div
 				class="container mx-auto flex items-center justify-between py-4 px-6"
 			>
-				<h1 class="text-2xl font-bold">Enjoy Buy</h1>
-				<nav>
+				<!-- Logo -->
+				<h1 class="sm:text-2xl font-bold">Enjoy Buy</h1>
+
+				<!-- Hamburger Menu for Mobile -->
+				<button
+					id="mobile-menu-button"
+					class="md:hidden text-white focus:outline-none"
+				>
+					<svg
+						class="w-6 h-6"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16m-7 6h7"
+						/>
+					</svg>
+				</button>
+
+				<!-- Desktop Navigation -->
+				<nav class="hidden md:flex">
 					<ul class="flex space-x-4">
 						<li>
 							<a
@@ -47,6 +71,23 @@
 						</li>
 					</ul>
 				</nav>
+
+				<!-- Mobile Navigation --><nav
+  id="mobile-menu"
+  class="fixed top-0 left-0 w-full h-auto bg-[#2B3E3D] text-white transform -translate-y-full transition-transform duration-300 ease-in-out"
+>
+  <ul class="flex flex-col p-6 divide-y-[1px] text-xl justify-center">
+    <li><a href="#features" class="block py-2">功能特色</a></li>
+    <li><a href="#about" class="block py-2">關於我們</a></li>
+    <li><a href="#download" class="block py-2">下載</a></li>
+  </ul>
+</nav>
+
+<!-- 遮罩層 -->
+<div
+  id="menu-overlay"
+  class="fixed inset-0 -z-10 bg-black bg-opacity-50 hidden transform transition-transform duration-300"
+></div>
 			</div>
 		</header>
 
@@ -248,6 +289,39 @@
 		</footer>
 
 		<script>
+			const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuOverlay = document.getElementById("menu-overlay");
+
+  function openMenu() {
+    mobileMenu.classList.remove("-translate-y-full");
+    mobileMenu.classList.add("translate-y-0");
+    menuOverlay.classList.remove("hidden");
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add("-translate-y-full");
+    mobileMenu.classList.remove("translate-y-0");
+    menuOverlay.classList.add("hidden");
+  }
+
+  // 漢堡按鈕事件
+  mobileMenuButton.addEventListener("click", () => {
+    if (mobileMenu.classList.contains("-translate-y-full")) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+
+  // 點擊遮罩層關閉菜單
+  menuOverlay.addEventListener("click", closeMenu);
+
+  // 點擊菜單項目後關閉菜單
+  const menuLinks = document.querySelectorAll("#mobile-menu a");
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
 			// Parallax effect
 			document.addEventListener("scroll", () => {
 				const parallaxElements = document.querySelectorAll(".parallax");
