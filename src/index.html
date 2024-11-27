@@ -15,9 +15,9 @@
 		</style>
 		<title>Enjoy Buy</title>
 	</head>
-	<body class="bg-stone-100 text-stone-800">
+	<body class="bg-stone-100 text-[#2B3E3D]">
 		<!-- Header Section -->
-		<header class="bg-[#2B3E3D] text-white sticky top-0 z-50">
+		<header class="bg-amber-500 sticky top-0 z-50">
 			<div
 				class="container mx-auto flex items-center justify-between py-4 px-6"
 			>
@@ -29,7 +29,7 @@
 					type="button"
 					title="menu button"
 					id="mobile-menu-button"
-					class="md:hidden text-white focus:outline-none"
+					class="md:hidden focus:outline-none"
 				>
 					<svg
 						class="w-6 h-6"
@@ -49,26 +49,26 @@
 
 				<!-- Desktop Navigation -->
 				<nav class="hidden md:flex">
-					<ul class="flex space-x-4">
+					<ul class="flex space-x-4 sm:text-sm">
 						<li>
 							<a
 								href="#features"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>功能特色</a
+								>Features</a
 							>
 						</li>
 						<li>
 							<a
 								href="#about"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>關於我們</a
+								>About</a
 							>
 						</li>
 						<li>
 							<a
 								href="#download"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>下載</a
+								>Download</a
 							>
 						</li>
 					</ul>
@@ -77,14 +77,20 @@
 				<!-- Mobile Navigation -->
 				<nav
 					id="mobile-menu"
-					class="fixed top-0 left-0 w-full h-auto bg-[#2B3E3D] text-white transform -translate-y-full transition-transform duration-300 ease-in-out"
+					class="fixed top-0 left-0 w-full h-auto bg-amber-500 transform -translate-y-full transition-transform duration-300 ease-in-out"
 				>
 					<ul
-						class="flex flex-col p-6 divide-y-[1px] justify-center sm:text-xl text-md"
+						class="flex flex-col p-6 divide-opacity-20 divide-stone-50 divide-y-[1px] justify-center sm:text-xl text-md"
 					>
-						<li><a href="#features" class="block py-2">功能特色</a></li>
-						<li><a href="#about" class="block py-2">關於我們</a></li>
-						<li><a href="#download" class="block py-2">下載</a></li>
+						<li>
+							<a href="#features" class="block py-4 text-center">功能特色</a>
+						</li>
+						<li>
+							<a href="#about" class="block py-4 text-center">關於我們</a>
+						</li>
+						<li>
+							<a href="#download" class="block py-4 text-center">前往下載</a>
+						</li>
 					</ul>
 				</nav>
 
@@ -123,7 +129,7 @@
 					alt="第三張圖片"
 					class="absolute w-full h-full object-cover parallax"
 					style="z-index: 2; transform: translateY(0px)"
-					data-speed="0.5"
+					data-speed="0.4"
 				/>
 				<!-- 第四張圖片 -->
 				<img
@@ -135,7 +141,7 @@
 				/>
 				<!-- 文字內容 -->
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center z-20 text-white bg-black bg-opacity-30 p-6"
+					class="absolute inset-0 flex flex-col items-center justify-center z-20 bg-black bg-opacity-30 p-6 text-white"
 				>
 					<!-- 主標題 -->
 					<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -150,7 +156,7 @@
 					<!-- 按鈕 -->
 					<a
 						href="#download"
-						class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-amber-500 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-white transition ease-in-out duration-500"
@@ -166,21 +172,25 @@
 		</section>
 
 		<!-- Features Section -->
-		<section id="features" class="bg-white py-16">
+		<section id="features" class="bg-white py-12 sm:py-16 lg:py-20">
 			<div class="container mx-auto text-center">
-				<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8">
+				<h3
+					class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 lg:mb-10"
+				>
 					功能特色
 				</h3>
-				<div class="grid grid-rows-1 md:grid-rows-3 gap-y-8">
+				<div
+					class="grid grid-rows-1 md:grid-rows-3 gap-y-8 sm:gap-y-12 lg:gap-y-16"
+				>
 					<!-- Feature 1 -->
 					<div
 						class="bg-white rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:gap-x-24"
 					>
-						<div class="w-full">
+						<div class="flex w-full items-center justify-center">
 							<img
-								src="https://picsum.photos/500"
+								src="img/image1.png"
 								alt="功能 1"
-								class="w-full h-full object-cover rounded-md"
+								class="w-56 object-cover rounded-md"
 							/>
 						</div>
 						<div
@@ -192,12 +202,12 @@
 								簡單易用
 							</h4>
 							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								關於Enjoy Buy
+								商品管理
 							</h3>
 							<p
 								class="text-sm sm:text-base lg:text-lg text-stone-600 sm:text-left leading-relaxed"
 							>
-								我們的應用程式設計簡潔直觀，讓每個人都能輕鬆上手。
+								可查看已新增之所有商品，以及類別管理。
 							</p>
 						</div>
 					</div>
@@ -205,11 +215,11 @@
 					<div
 						class="bg-white rounded-lg p-6 flex flex-col md:flex-row-reverse sm:gap-x-24"
 					>
-						<div class="w-full md:w-1/2">
+						<div class="flex w-full items-center justify-center">
 							<img
-								src="https://picsum.photos/500"
+								src="img/image2.png"
 								alt="功能 2"
-								class="w-full h-full object-cover rounded-md"
+								class="w-auto h-1/2 object-cover rounded-md"
 							/>
 						</div>
 						<div
@@ -234,11 +244,11 @@
 					<div
 						class="bg-white rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:gap-x-24"
 					>
-						<div class="w-full">
+						<div class="flex w-full items-center justify-center">
 							<img
-								src="https://picsum.photos/500"
+								src="img/image1.png"
 								alt="功能 3"
-								class="w-full h-full object-cover rounded-md"
+								class="w-auto h-1/2 object-cover rounded-md"
 							/>
 						</div>
 						<div
@@ -264,15 +274,15 @@
 		</section>
 
 		<!-- About Section -->
-		<section id="about" class="bg-white py-16">
+		<section id="about" class="bg-white py-12 sm:py-16 lg:py-20">
 			<div
-				class="container mx-auto flex flex-col md:flex-row items-center gap-8"
+				class="container mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 lg:gap-12"
 			>
 				<div class="w-full md:w-1/2 h-72">
 					<img
 						src="https://picsum.photos/500"
 						alt="關於我們"
-						class="w-full h-full object-cover rounded-lg shadow-md"
+						class="w-full h-full object-cover bg-fixed"
 					/>
 				</div>
 				<div class="md:w-1/2 text-center md:text-left px-4 sm:px-6 lg:px-12">
@@ -289,7 +299,7 @@
 					</p>
 					<a
 						href="#download"
-						class="group px-6 py-3 rounded-lg inline-block overflow-hidden bg-[#2B3E3D] relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						class="group px-6 py-3 rounded-lg inline-block overflow-hidden bg-amber-500 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-white transition ease-in-out duration-500"
@@ -301,10 +311,7 @@
 		</section>
 
 		<!-- Download Section -->
-		<section
-			id="download"
-			class="bg-[#2B3E3D] text-white py-12 sm:py-16 lg:py-20"
-		>
+		<section id="download" class="bg-amber-500 py-12 sm:py-16 lg:py-20">
 			<div class="container mx-auto text-center">
 				<h3
 					class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8"
@@ -322,7 +329,7 @@
 						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
-							class="relative z-0 text-[#2B3E3D] text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
+							class="relative z-0 text-amber-500 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
 						>
 							下載 iOS/Android 版本
 						</span>
@@ -332,7 +339,7 @@
 						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
-							class="relative z-0 text-[#2B3E3D] text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
+							class="relative z-0 text-amber-500 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
 						>
 							立即開始使用網頁版
 						</span>
@@ -342,7 +349,7 @@
 		</section>
 
 		<!-- Footer Section -->
-		<footer class="bg-stone-800 text-white py-6">
+		<footer class="bg-stone-800 py-6 text-stone-500">
 			<div class="container mx-auto text-center">
 				<p
 					class="text-sm sm:text-base lg:text-lg leading-relaxed sm:leading-loose"
