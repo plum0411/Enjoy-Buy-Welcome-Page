@@ -17,13 +17,17 @@
 	</head>
 	<body class="bg-stone-100 text-[#2B3E3D]">
 		<!-- Header Section -->
-		<header class="bg-amber-500 sticky top-0 z-50">
+		<header class="bg-amber-500 sticky top-0 z-50 shadow-md">
 			<div
 				class="container mx-auto flex items-center justify-between py-4 px-6"
 			>
 				<!-- Logo -->
-				<h1 class="sm:text-2xl font-bold">Enjoy Buy</h1>
-
+				<div class="flex items-center space-x-4">
+					<!-- <img src="img/logo.png" class="h-8 w-8 rounded-full" alt="Logo" /> -->
+					<img src="img/logo_nobg.png" class="h-6 sm:h-8 rounded-xl" alt="Logo" />
+					<img src="img/enjoy_buy.png" class="h-4 sm:h-6 rounded-sm" alt="Logo" />
+					<!-- <h1 class="sm:text-xl font-bold">Enjoy Buy</h1> -->
+				</div>
 				<!-- Hamburger Menu for Mobile -->
 				<button
 					type="button"
@@ -141,10 +145,10 @@
 				/>
 				<!-- 文字內容 -->
 				<div
-					class="absolute inset-0 flex flex-col items-center justify-center z-20 bg-black bg-opacity-30 p-6 text-white"
+					class="absolute inset-0 flex flex-col items-center justify-center drop-shadow-md z-20 bg-black bg-opacity-30 p-6 text-white"
 				>
 					<!-- 主標題 -->
-					<h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+					<h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4">
 						歡迎使用 Enjoy Buy
 					</h2>
 					<!-- 副標題 -->
@@ -156,7 +160,7 @@
 					<!-- 按鈕 -->
 					<a
 						href="#download"
-						class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-amber-500 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						class="group [transform:translateZ(0)] px-6 py-3 mt-6 rounded-lg overflow-hidden bg-amber-700 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-white transition ease-in-out duration-500"
@@ -184,88 +188,98 @@
 				>
 					<!-- Feature 1 -->
 					<div
-						class="bg-white rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:gap-x-24"
+						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 					>
-						<div class="flex w-full items-center justify-center">
+						<!-- 圖片 -->
+						<div class="flex w-full md:w-1/2 justify-center">
 							<img
-								src="img/image1.png"
+								src="img/編輯商品.png"
 								alt="功能 1"
-								class="w-56 object-cover rounded-md"
+								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
 							/>
 						</div>
+
+						<!-- 文字內容 -->
 						<div
-							class="flex sm:items-start items-center justify-center flex-col"
+							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 						>
 							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 mb-2"
+								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
 							>
-								簡單易用
+								結合趨勢
 							</h4>
 							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								商品管理
+								引入AI技術
 							</h3>
 							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 sm:text-left leading-relaxed"
+								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
 							>
-								可查看已新增之所有商品，以及類別管理。
+								使用AI圖片辨識一鍵生成商品說明文字敘述，提高攤商上架商品的效率。
 							</p>
 						</div>
 					</div>
 					<!-- Feature 2 -->
 					<div
-						class="bg-white rounded-lg p-6 flex flex-col md:flex-row-reverse sm:gap-x-24"
+						class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
 					>
-						<div class="flex w-full items-center justify-center">
+						<!-- 圖片 -->
+						<div class="flex w-full md:w-1/2 justify-center">
 							<img
-								src="img/image2.png"
+								src="img/商品管理.png"
 								alt="功能 2"
-								class="w-auto h-1/2 object-cover rounded-md"
+								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
 							/>
 						</div>
+
+						<!-- 文字內容 -->
 						<div
-							class="flex w-full md:w-1/2 sm:items-start items-center justify-center flex-col"
+							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 						>
 							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 mb-2"
+								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
 							>
-								高度自訂
+								攤位經營
 							</h4>
 							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								關於Enjoy Buy
+								商品管理功能
 							</h3>
 							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 sm:text-left leading-relaxed"
+								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
 							>
-								根據您的需求和喜好，隨心所欲地調整使用方式。
+								直覺查看已新增之所有商品與類別，即時根據需求調整商品。
 							</p>
 						</div>
 					</div>
+
 					<!-- Feature 3 -->
 					<div
-						class="bg-white rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 sm:gap-x-24"
+						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 					>
-						<div class="flex w-full items-center justify-center">
+						<!-- 圖片 -->
+						<div class="flex w-full md:w-1/2 justify-center">
 							<img
-								src="img/image1.png"
+								src="img/訂單管理.png"
 								alt="功能 3"
-								class="w-auto h-1/2 object-cover rounded-md"
+								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
 							/>
 						</div>
+
+						<!-- 文字內容 -->
 						<div
-							class="flex sm:items-start items-center justify-center flex-col"
+							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 						>
 							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 mb-2"
+								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
 							>
-								安全可靠
+								一覽流程狀態
 							</h4>
 							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								關於Enjoy Buy
+								訂單管理功能
 							</h3>
 							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 sm:text-left leading-relaxed"
+								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
 							>
-								採用領先業界的安全防護措施，全面保障您的數據安全。
+								接受訂單後在訂單管理通知消費者取餐，使用狀態分類訂單，當前訂單一目瞭然。
 							</p>
 						</div>
 					</div>
@@ -295,11 +309,12 @@
 						class="text-sm sm:text-base lg:text-lg text-stone-600 mb-6 sm:mb-8 lg:mb-10 leading-relaxed sm:leading-loose"
 					>
 						Enjoy Buy
-						是一款幫助您隨時隨地保持井然有序的應用程式。介面清晰，功能強大，是提升效率的最佳選擇。
+						無需接觸付款、無需記住每個商品的金額、無需人工手動紀錄活動管理收支，Enjoy
+						Buy帶您體驗一場現代的園遊會。
 					</p>
 					<a
 						href="#download"
-						class="group px-6 py-3 rounded-lg inline-block overflow-hidden bg-amber-500 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						class="group px-6 py-3 rounded-lg inline-block overflow-hidden bg-amber-700 relative before:absolute before:bg-[#1D2F2E] before:top-1/2 before:left-1/2 before:h-8 before:w-8 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-white transition ease-in-out duration-500"
@@ -329,7 +344,7 @@
 						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
-							class="relative z-0 text-amber-500 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
+							class="relative z-0 text-amber-700 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
 						>
 							下載 iOS/Android 版本
 						</span>
@@ -339,7 +354,7 @@
 						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
-							class="relative z-0 text-amber-500 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
+							class="relative z-0 text-amber-700 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
 						>
 							立即開始使用網頁版
 						</span>
