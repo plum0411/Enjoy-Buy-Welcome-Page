@@ -66,21 +66,21 @@
 							<a
 								href="#features"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>Features</a
+								>功能特色</a
 							>
 						</li>
 						<li>
 							<a
 								href="#about"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>About</a
+								>關於我們</a
 							>
 						</li>
 						<li>
 							<a
 								href="#download"
 								class="relative after:absolute after:bg-white after:bottom-0 after:left-0 after:h-[5px] after:w-full after:translate-y-1 after:opacity-0 hover:after:translate-y-0 hover:after:opacity-30 after:transition after:ease-in-out after:duration-200"
-								>Download</a
+								>前往下載</a
 							>
 						</li>
 					</ul>
@@ -163,7 +163,7 @@
 					<p
 						class="text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 leading-relaxed"
 					>
-						一個讓生活更簡單、提升效率的好幫手。
+						與 Enjoy Buy 一起體驗一場現代化的園遊會。
 					</p>
 					<!-- 按鈕 -->
 					<a
@@ -184,309 +184,345 @@
 		</section>
 
 		<!-- Features Section -->
-		<section id="features" class="bg-white py-12 sm:py-16 lg:py-20">
+		<section id="features" class="bg-stone-100 py-12 sm:py-16 lg:py-20">
 			<div class="container mx-auto text-center">
 				<h3
 					class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 lg:mb-10"
 				>
 					功能特色
 				</h3>
+				<!-- Tabs -->
+				<div class="flex justify-center space-x-4 mb-8">
+					<button
+						class="tab-button px-4 py-2 text-sm sm:text-base lg:text-lg font-bold bg-[#2B3E3D] text-white rounded-full focus:outline-none active"
+						data-tab="tab-merchant"
+					>
+						攤商方
+					</button>
+					<button
+						class="tab-button px-4 py-2 text-sm sm:text-base lg:text-lg font-bold bg-stone-200 rounded-full focus:outline-none"
+						data-tab="tab-organizer"
+					>
+						主辦方
+					</button>
+					<button
+						class="tab-button px-4 py-2 text-sm sm:text-base lg:text-lg font-bold bg-stone-200 rounded-full focus:outline-none"
+						data-tab="tab-consumer"
+					>
+						消費者
+					</button>
+				</div>
+				<!-- Tab Contents Wrapper -->
 				<div
-					class="grid grid-rows-1 md:grid-rows-3 gap-y-8 sm:gap-y-12 lg:gap-y-16"
+					id="tab-content-wrapper"
+					class="relative overflow-hidden transition-all duration-300"
+					style="height: auto"
 				>
 					<!-- 攤商端 -->
-					<!-- Feature 1 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/編輯商品.png"
-								alt="功能 1"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
-
-						<!-- 文字內容 -->
+					<div id="tab-merchant" class="tab-content">
+						<!-- Feature 1 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								結合趨勢
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								引入AI技術
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								使用AI圖片辨識一鍵生成商品說明文字敘述，提高攤商上架商品的效率。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 2 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/商品管理.png"
-								alt="功能 2"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/編輯商品.png"
+									alt="功能 1"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									結合趨勢
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									引入AI技術
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									使用AI圖片辨識一鍵生成商品說明文字敘述，提高攤商上架商品的效率。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 2 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								攤位經營
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								商品管理功能
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								直覺查看已新增之所有商品與類別，即時根據需求調整商品。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 3 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/訂單管理.png"
-								alt="功能 3"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/商品管理.png"
+									alt="功能 2"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									攤位經營
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									商品管理功能
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									直覺查看已新增之所有商品與類別，即時根據需求調整商品。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 3 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/訂單管理.png"
+									alt="功能 3"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
+
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 							>
-								一覽流程狀態
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								訂單管理功能
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								接受訂單後在訂單管理通知消費者取餐，使用狀態分類訂單，當前訂單一目瞭然。
-							</p>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									一覽流程狀態
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									訂單管理功能
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									接受訂單後在訂單管理通知消費者取餐，使用狀態分類訂單，當前訂單一目瞭然。
+								</p>
+							</div>
 						</div>
 					</div>
 					<!-- 攤商端 -->
 
 					<!-- 主辦端 -->
-					<!-- Feature 1 -->
 					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
+						id="tab-organizer"
+						class="tab-content hidden opacity-0 absolute top-0 left-0"
 					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/主辦統計圖表.png"
-								alt="主辦端功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
-
-						<!-- 文字內容 -->
+						<!-- Feature 1 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								營運狀態管理
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								主辦收益數據分析
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								可以查看活動相關的各個數據，包含訂單數量與狀態、儲值金額、支付攤商金額等，便於主辦方針對活動進行管理決策。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 2 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/主辦權限管理.png"
-								alt="主辦端功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/主辦統計圖表.png"
+									alt="主辦端功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									營運狀態管理
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									主辦收益數據分析
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									可以查看活動相關的各個數據，包含訂單數量與狀態、儲值金額、支付攤商金額等，便於主辦方針對活動進行管理決策。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 2 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								客製的人員的存取控制
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								權限管理功能
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								依照RBAC，將分配之身分組與權限指派給人員，協助人員們進行協作。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 3 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/主辦摸彩.png"
-								alt="主辦端功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/主辦權限管理.png"
+									alt="主辦端功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									客製的人員的存取控制
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									權限管理功能
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									依照RBAC，將分配之身分組與權限指派給人員，協助人員們進行協作。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 3 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/主辦摸彩.png"
+									alt="主辦端功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
+
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 							>
-								園遊會焦點
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								摸彩系統
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								主辦可以透過此功能設定區間、抽出摸彩券。幸運兒是你嗎？
-							</p>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									園遊會焦點
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									摸彩系統
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									主辦可以透過此功能設定區間、抽出摸彩券。幸運兒是你嗎？
+								</p>
+							</div>
 						</div>
 					</div>
 					<!-- 主辦端 -->
 
 					<!-- 消費者 -->
-					<!-- Feature 1 -->
 					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
+						id="tab-consumer"
+						class="tab-content hidden opacity-0 absolute top-0 left-0"
 					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/消費者點位地圖.png"
-								alt="消費者功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
-
-						<!-- 文字內容 -->
+						<!-- Feature 1 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								攤位概覽一目了然
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								活動點位地圖
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								由主辦方新增，顧客可以查看攤位分佈，點擊點位可以看到此攤商相關資訊。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 2 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/消費者通知.png"
-								alt="消費者功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/消費者點位地圖.png"
+									alt="消費者功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									攤位概覽一目了然
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									活動點位地圖
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									由主辦方新增，顧客可以查看攤位分佈，點擊點位可以看到此攤商相關資訊。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 2 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row-reverse md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
-							>
-								資訊不漏接
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								通知管理
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								根據消費者的活動清楚劃分分類通知，讓訊息不混雜在一起。
-							</p>
-						</div>
-					</div>
-					<!-- Feature 3 -->
-					<div
-						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
-					>
-						<!-- 圖片 -->
-						<div class="flex w-full md:w-1/2 justify-center">
-							<img
-								src="img/消費者錢包.png"
-								alt="消費者功能"
-								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
-							/>
-						</div>
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/消費者通知.png"
+									alt="消費者功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
 
-						<!-- 文字內容 -->
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									資訊不漏接
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									通知管理
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									根據消費者的活動清楚劃分分類通知，讓訊息不混雜在一起。
+								</p>
+							</div>
+						</div>
+						<!-- Feature 3 -->
 						<div
-							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+							class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
 						>
-							<h4
-								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+							<!-- 圖片 -->
+							<div class="flex w-full md:w-1/2 justify-center">
+								<img
+									src="img/消費者錢包.png"
+									alt="消費者功能"
+									class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+								/>
+							</div>
+
+							<!-- 文字內容 -->
+							<div
+								class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
 							>
-								活動餘額一次查看
-							</h4>
-							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-								錢包管理
-							</h3>
-							<p
-								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
-							>
-								可分別管理個活動的錢包，消費或轉贈都會留下清楚的紀錄。
-							</p>
+								<h4
+									class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+								>
+									活動餘額一次查看
+								</h4>
+								<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+									錢包管理
+								</h3>
+								<p
+									class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+								>
+									可分別管理個活動的錢包，消費或轉贈都會留下清楚的紀錄。
+								</p>
+							</div>
 						</div>
 					</div>
 					<!-- 消費者 -->
@@ -500,28 +536,28 @@
 				class="container mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 lg:gap-12"
 			>
 				<div
-					class="carousel md:w-1/2 relative px-4 sm:px-6 lg:px-12 overflow-hidden"
+					class="carousel md:w-1/2 relative px-4 sm:px-8 lg:px-12 overflow-hidden rounded-md"
 				>
 					<!-- 圖片容器 -->
 					<div
-						class="slides-wrapper flex tra nsition-transform duration-700 ease-in-out h-48"
+						class="slides-wrapper flex transition-transform duration-700 ease-in-out w-full aspect-square"
 						style="transform: translateX(0%)"
 					>
-						<div class="slide -full flex-shrink-0">
+						<div class="slide h-full w-full flex-shrink-0">
 							<img
 								src="img/主辦鴨.png"
 								alt="主辦鴨"
 								class="w-full h-full object-cover"
 							/>
 						</div>
-						<div class="slide h-full flex-shrink-0">
+						<div class="slide h-full w-full flex-shrink-0">
 							<img
 								src="img/攤商鴨.png"
 								alt="攤商鴨"
 								class="w-full h-full object-cover"
 							/>
 						</div>
-						<div class="slide h-full flex-shrink-0">
+						<div class="slide h-full w-full flex-shrink-0">
 							<img
 								src="img/消費者鴨.png"
 								alt="消費者鴨"
@@ -627,8 +663,8 @@
 							下載 iOS/Android 版本
 						</span>
 					</a>
-					<a
-						href="#"
+					<!-- <a
+						href="https://ebh.langyage.in"
 						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-200 before:top-1/2 before:left-1/2 before:h-20 before:w-20 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
@@ -636,8 +672,28 @@
 						>
 							立即開始使用網頁版
 						</span>
-					</a>
+					</a> -->
 				</div>
+				<p class="text-amber-800 sm:text-sm lg:text-md mt-6 sm:mb-2 lg:mb-4">
+					<b>立即註冊</b> 或 <b>使用我們的測試帳號看看！</b>
+				</p>
+				<p class="text-amber-700 sm:text-sm lg:text-md sm:mb-8 lg:mb-10">
+					<b>帳號</b>
+					<br />
+					user{ 026、027...100 }@langyage.in
+					<br />
+					<br />
+
+					<b>密碼</b>
+					<br />
+					12345678
+					<br />
+					<br />
+
+					<b>驗證碼</b>
+					<br />
+					123456
+				</p>
 			</div>
 		</section>
 
@@ -653,6 +709,7 @@
 		</footer>
 
 		<script>
+			// Header
 			const mobileMenuButton = document.getElementById("mobile-menu-button");
 			const mobileMenu = document.getElementById("mobile-menu");
 			const menuOverlay = document.getElementById("menu-overlay");
@@ -686,7 +743,8 @@
 			menuLinks.forEach((link) => {
 				link.addEventListener("click", closeMenu);
 			});
-			// Parallax effect
+
+			// Parallax effect(視差)
 			document.addEventListener("scroll", () => {
 				const parallaxElements = document.querySelectorAll(".parallax");
 				const scrollTop =
@@ -698,6 +756,7 @@
 				});
 			});
 
+			// 輪播圖
 			const slidesWrapper = document.querySelector(".slides-wrapper");
 			const slides = document.querySelectorAll(".slide");
 			const prevBtn = document.getElementById("prev-btn");
@@ -728,7 +787,57 @@
 			setInterval(() => {
 				const newIndex = (currentIndex + 1) % totalSlides;
 				goToSlide(newIndex);
-			}, 40000);
+			}, 4000);
+
+			// Tab
+			document.addEventListener("DOMContentLoaded", () => {
+				const tabs = document.querySelectorAll(".tab-button");
+				const contents = document.querySelectorAll(".tab-content");
+				const wrapper = document.getElementById("tab-content-wrapper");
+
+				// 更新 Tab Wrapper 高度
+				function updateHeight() {
+					const activeContent = document.querySelector(
+						".tab-content:not(.hidden)"
+					);
+					if (activeContent) {
+						wrapper.style.height = `${activeContent.scrollHeight}px`;
+					}
+				}
+
+				tabs.forEach((tab) => {
+					tab.addEventListener("click", () => {
+						// 移除所有按鈕的 "active" 樣式
+						tabs.forEach((btn) => {
+							btn.classList.remove("bg-[#2B3E3D]", "text-white");
+							btn.classList.add("bg-stone-200", "text-[#2B3E3D]");
+						});
+
+						// 添加當前按鈕的 "active" 樣式
+						tab.classList.add("bg-[#2B3E3D]", "text-white");
+						tab.classList.remove("bg-stone-200", "text-[#2B3E3D]");
+						updateHeight();
+
+						// 隱藏所有內容
+						contents.forEach((content) => {
+							content.classList.add("hidden", "opacity-0");
+							content.style.position = "absolute";
+						});
+
+						// 顯示目標內容
+						const targetId = tab.getAttribute("data-tab");
+						const targetContent = document.getElementById(targetId);
+						targetContent.classList.remove("hidden", "opacity-0");
+						targetContent.style.position = "relative";
+
+						// 更新高度
+						updateHeight();
+					});
+				});
+
+				// 初始化高度
+				updateHeight();
+			});
 		</script>
 	</body>
 </html>
