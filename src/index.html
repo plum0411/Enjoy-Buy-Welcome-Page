@@ -24,8 +24,16 @@
 				<!-- Logo -->
 				<div class="flex items-center space-x-4">
 					<!-- <img src="img/logo.png" class="h-8 w-8 rounded-full" alt="Logo" /> -->
-					<img src="img/logo_nobg.png" class="h-6 sm:h-8 rounded-xl" alt="Logo" />
-					<img src="img/enjoy_buy.png" class="h-4 sm:h-6 rounded-sm" alt="Logo" />
+					<img
+						src="img/logo_nobg.png"
+						class="h-6 sm:h-8 rounded-xl"
+						alt="Logo"
+					/>
+					<img
+						src="img/enjoy_buy.png"
+						class="h-4 sm:h-6 rounded-sm"
+						alt="Logo"
+					/>
 					<!-- <h1 class="sm:text-xl font-bold">Enjoy Buy</h1> -->
 				</div>
 				<!-- Hamburger Menu for Mobile -->
@@ -186,6 +194,7 @@
 				<div
 					class="grid grid-rows-1 md:grid-rows-3 gap-y-8 sm:gap-y-12 lg:gap-y-16"
 				>
+					<!-- 攤商端 -->
 					<!-- Feature 1 -->
 					<div
 						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
@@ -250,7 +259,6 @@
 							</p>
 						</div>
 					</div>
-
 					<!-- Feature 3 -->
 					<div
 						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
@@ -283,6 +291,75 @@
 							</p>
 						</div>
 					</div>
+					<!-- 攤商端 -->
+
+					<!-- 主辦端 -->
+					<div
+						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
+					>
+						<!-- 圖片 -->
+						<div class="flex w-full md:w-1/2 justify-center">
+							<img
+								src="img/主辦統計圖表.png"
+								alt="主辦端功能 1"
+								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+							/>
+						</div>
+
+						<!-- 文字內容 -->
+						<div
+							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+						>
+							<h4
+								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+							>
+								營運狀態管理
+							</h4>
+							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+								主辦收益數據分析
+							</h3>
+							<p
+								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+							>
+								可以查看活動相關的各個數據，包含訂單數量與狀態、儲值金額、支付攤商金額等，便於主辦方針對活動進行管理決策。
+							</p>
+						</div>
+					</div>
+					<!-- 主辦端 -->
+
+					<!-- 消費者 -->
+					<div
+						class="rounded-lg p-6 flex flex-col md:flex-row md:items-center sm:gap-8 lg:gap-12"
+					>
+						<!-- 圖片 -->
+						<div class="flex w-full md:w-1/2 justify-center">
+							<img
+								src="img/消費者點位地圖.png"
+								alt="消費者功能 1"
+								class="w-40 md:w-64 lg:w-72 object-cover rounded-md shadow-md"
+							/>
+						</div>
+
+						<!-- 文字內容 -->
+						<div
+							class="flex w-full md:w-1/2 flex-col items-center md:items-start text-center md:text-left"
+						>
+							<h4
+								class="text-lg sm:text-xl lg:text-2xl font-semibold mt-4 md:mt-0 mb-2"
+							>
+								攤位概覽一目了然
+							</h4>
+							<h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+								活動點位地圖
+							</h3>
+							<p
+								class="text-sm sm:text-base lg:text-lg text-stone-600 leading-relaxed"
+							>
+								由主辦方新增，顧客可以查看攤位分佈，點擊點位可以看到此攤商相關資訊。
+							</p>
+						</div>
+					</div>
+					<!-- 消費者 -->
 				</div>
 			</div>
 		</section>
@@ -292,13 +369,84 @@
 			<div
 				class="container mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 lg:gap-12"
 			>
-				<div class="w-full md:w-1/2 h-72">
-					<img
-						src="https://picsum.photos/500"
-						alt="關於我們"
-						class="w-full h-full object-cover bg-fixed"
-					/>
+				<div
+					class="carousel md:w-1/2 relative px-4 sm:px-6 lg:px-12 overflow-hidden"
+				>
+					<!-- 圖片容器 -->
+					<div
+						class="slides-wrapper flex transition-transform duration-700 ease-in-out h-48"
+						style="transform: translateX(0%)"
+					>
+						<div class="slide h-full flex-shrink-0">
+							<img
+								src="img/主辦鴨.png"
+								alt="主辦鴨"
+								class="w-full h-full object-cover"
+							/>
+						</div>
+						<div class="slide h-full flex-shrink-0">
+							<img
+								src="img/攤商鴨.png"
+								alt="攤商鴨"
+								class="w-full h-full object-cover"
+							/>
+						</div>
+						<div class="slide h-full flex-shrink-0">
+							<img
+								src="img/消費者鴨.png"
+								alt="消費者鴨"
+								class="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+
+					<!-- 左按鈕 -->
+					<button
+						type="button"
+						title="左按鈕"
+						id="prev-btn"
+						class="absolute top-1/2 left-4 bg-black bg-opacity-30 text-white px-2 py-2 rounded-full"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-4 w-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 19l-7-7 7-7"
+							/>
+						</svg>
+					</button>
+
+					<!-- 右按鈕 -->
+					<button
+						type="button"
+						title="右按鈕"
+						id="next-btn"
+						class="absolute top-1/2 right-4 bg-black bg-opacity-30 text-white px-2 py-2 rounded-full"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-4 w-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 5l7 7-7 7"
+							/>
+						</svg>
+					</button>
 				</div>
+
 				<div class="md:w-1/2 text-center md:text-left px-4 sm:px-6 lg:px-12">
 					<h3
 						class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8"
@@ -308,7 +456,6 @@
 					<p
 						class="text-sm sm:text-base lg:text-lg text-stone-600 mb-6 sm:mb-8 lg:mb-10 leading-relaxed sm:leading-loose"
 					>
-						Enjoy Buy
 						無需接觸付款、無需記住每個商品的金額、無需人工手動紀錄活動管理收支，Enjoy
 						Buy帶您體驗一場現代的園遊會。
 					</p>
@@ -340,8 +487,9 @@
 					class="flex flex-col sm:flex-row justify-center px-4 space-y-4 sm:space-y-0 sm:space-x-4"
 				>
 					<a
-						href="#"
-						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						href="apk/enjoy-buy-v-1-0-0.apk"
+						download=""
+						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-200 before:top-1/2 before:left-1/2 before:h-20 before:w-20 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-amber-700 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
@@ -351,7 +499,7 @@
 					</a>
 					<a
 						href="#"
-						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-300 before:top-1/2 before:left-1/2 before:h-10 before:w-10 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
+						class="group [transform:translateZ(0)] px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-lg overflow-hidden flex items-center justify-center bg-white relative before:absolute before:bg-stone-200 before:top-1/2 before:left-1/2 before:h-20 before:w-20 before:-translate-y-1/2 before:-translate-x-1/2 before:rounded-full before:scale-[0] before:opacity-0 hover:before:scale-[6] hover:before:opacity-100 before:transition before:ease-in-out before:duration-500"
 					>
 						<span
 							class="relative z-0 text-amber-700 text-sm sm:text-base lg:text-lg transition ease-in-out duration-500"
@@ -419,6 +567,38 @@
 					el.style.transform = `translateY(${scrollTop * speed}px)`;
 				});
 			});
+
+			const slidesWrapper = document.querySelector(".slides-wrapper");
+			const slides = document.querySelectorAll(".slide");
+			const prevBtn = document.getElementById("prev-btn");
+			const nextBtn = document.getElementById("next-btn");
+			const totalSlides = slides.length;
+
+			let currentIndex = 0;
+
+			// 切換到指定索引的圖片
+			function goToSlide(index) {
+				slidesWrapper.style.transform = `translateX(-${index * 100}%)`;
+				currentIndex = index;
+			}
+
+			// 點擊上一張
+			prevBtn.addEventListener("click", () => {
+				const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+				goToSlide(newIndex);
+			});
+
+			// 點擊下一張
+			nextBtn.addEventListener("click", () => {
+				const newIndex = (currentIndex + 1) % totalSlides;
+				goToSlide(newIndex);
+			});
+
+			// 自動播放，每 3 秒切換
+			setInterval(() => {
+				const newIndex = (currentIndex + 1) % totalSlides;
+				goToSlide(newIndex);
+			}, 40000);
 		</script>
 	</body>
 </html>
